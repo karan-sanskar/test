@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QUES-TEMPL-{###}",
+ "creation": "2024-02-09 01:21:18.390220",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "is_active",
+  "is_default",
+  "service_type",
+  "vaccine_type",
+  "questions_description"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "label": "Is default"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vaccine_type",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Appointment Type",
+   "options": "Questionnaires Vaccine Type"
+  },
+  {
+   "fieldname": "questions_description",
+   "fieldtype": "Table",
+   "label": "Questions Description",
+   "options": "Questions Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-21 06:35:00.309964",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Questionnaires Template",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

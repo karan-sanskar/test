@@ -1,0 +1,11 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "UOM",
+  "enabled": 1,
+  "modified": "2024-03-29 02:20:50.644803",
+  "must_be_whole_number": 0,
+  "name": "mg",
+  "uom_name": "mg"
+ }
+]

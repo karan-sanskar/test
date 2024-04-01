@@ -1,0 +1,28 @@
+[
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "en",
+  "modified": "2024-02-29 02:13:34.272997",
+  "name": "dbe9e6ec6a",
+  "source_text": "Healthcare Service Unit",
+  "translated_text": "Service Location"
+ },
+ {
+  "context": null,
+  "contributed": 0,
+  "contribution_docname": null,
+  "contribution_status": "",
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "en",
+  "modified": "2024-03-16 08:10:06.292368",
+  "name": "6889835f94",
+  "source_text": "Service Unit",
+  "translated_text": "Locations"
+ }
+]

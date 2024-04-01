@@ -1,0 +1,20 @@
+[
+ {
+  "allergy": "Allergy 2",
+  "docstatus": 0,
+  "doctype": "Allergy",
+  "modified": "2024-03-14 11:47:32.653874",
+  "name": "Allergy 2",
+  "reasoncause": "Reason for the allergy or the cause of the allergy",
+  "symptoms": "What are the symptoms of this allergy? "
+ },
+ {
+  "allergy": "Allergy 1",
+  "docstatus": 0,
+  "doctype": "Allergy",
+  "modified": "2024-01-31 22:35:20.971134",
+  "name": "Allergy 1",
+  "reasoncause": null,
+  "symptoms": "Symptoms of Allergy "
+ }
+]

@@ -1,0 +1,246 @@
+[
+ {
+  "allow_booking_for": "Practitioner",
+  "appointment_type": "COVID VACCINATION",
+  "color": "#29CD42",
+  "custom_accept_cash_payments": 0,
+  "custom_accept_medical_billing": 0,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 0,
+  "custom_medical_codes": [],
+  "custom_orig_description": null,
+  "custom_questionnaire_template": [],
+  "custom_service_type": "Immunization Service",
+  "default_duration": 20,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [],
+  "modified": "2024-02-28 12:42:36.394213",
+  "name": "COVID VACCINATION",
+  "price_list": null
+ },
+ {
+  "allow_booking_for": "Service Unit",
+  "appointment_type": "Follow-up CMR Appointment",
+  "color": null,
+  "custom_accept_cash_payments": 0,
+  "custom_accept_medical_billing": 0,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 0,
+  "custom_medical_codes": [],
+  "custom_orig_description": null,
+  "custom_questionnaire_template": [],
+  "custom_service_type": "CMR Service",
+  "default_duration": 20,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [],
+  "modified": "2024-03-14 07:48:05.981024",
+  "name": "Follow-up CMR Appointment",
+  "price_list": null
+ },
+ {
+  "allow_booking_for": "Service Unit",
+  "appointment_type": "Follow-up Appointment",
+  "color": null,
+  "custom_accept_cash_payments": 0,
+  "custom_accept_medical_billing": 0,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 1,
+  "custom_medical_codes": [],
+  "custom_orig_description": null,
+  "custom_questionnaire_template": [],
+  "custom_service_type": "CMR Service",
+  "default_duration": 20,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [],
+  "modified": "2024-03-19 08:03:12.252425",
+  "name": "Follow-up Appointment",
+  "price_list": null
+ },
+ {
+  "allow_booking_for": "Service Unit",
+  "appointment_type": "Covid - 19",
+  "color": null,
+  "custom_accept_cash_payments": 1,
+  "custom_accept_medical_billing": 0,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 0,
+  "custom_medical_codes": [],
+  "custom_orig_description": null,
+  "custom_questionnaire_template": [
+   {
+    "parent": "Covid - 19",
+    "parentfield": "custom_questionnaire_template",
+    "parenttype": "Appointment Type",
+    "questionnaire_template": "QUES-TEMPL-013"
+   },
+   {
+    "parent": "Covid - 19",
+    "parentfield": "custom_questionnaire_template",
+    "parenttype": "Appointment Type",
+    "questionnaire_template": "QUES-TEMPL-009"
+   }
+  ],
+  "custom_service_type": "Immunization Service",
+  "default_duration": 20,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [
+   {
+    "dn": "Coimbatore - RT",
+    "dt": "Healthcare Service Unit",
+    "inpatient_visit_charge": 0.0,
+    "inpatient_visit_charge_item": null,
+    "op_consulting_charge": 0.0,
+    "op_consulting_charge_item": null,
+    "parent": "Covid - 19",
+    "parentfield": "items",
+    "parenttype": "Appointment Type"
+   }
+  ],
+  "modified": "2024-03-30 02:17:27.911844",
+  "name": "Covid - 19",
+  "price_list": null
+ },
+ {
+  "allow_booking_for": "Service Unit",
+  "appointment_type": "RSV Vaccine",
+  "color": "#29CD42",
+  "custom_accept_cash_payments": 1,
+  "custom_accept_medical_billing": 0,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 0,
+  "custom_medical_codes": [],
+  "custom_orig_description": null,
+  "custom_questionnaire_template": [
+   {
+    "parent": "RSV Vaccine",
+    "parentfield": "custom_questionnaire_template",
+    "parenttype": "Appointment Type",
+    "questionnaire_template": "QUES-TEMPL-009"
+   }
+  ],
+  "custom_service_type": "Immunization Service",
+  "default_duration": 10,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [],
+  "modified": "2024-03-30 00:10:41.449985",
+  "name": "RSV Vaccine",
+  "price_list": null
+ },
+ {
+  "allow_booking_for": "Service Unit",
+  "appointment_type": "New CMR Service",
+  "color": "#ED6396",
+  "custom_accept_cash_payments": 0,
+  "custom_accept_medical_billing": 1,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 0,
+  "custom_medical_codes": [
+   {
+    "code": "(0 - 15)",
+    "code_system": "99605",
+    "code_value": "(0 - 15)-99605",
+    "definition": null,
+    "display": null,
+    "is_fhir_defined": 0,
+    "oid": null,
+    "parent": "New CMR Service",
+    "parentfield": "custom_medical_codes",
+    "parenttype": "Appointment Type",
+    "system": "99605"
+   },
+   {
+    "code": "(15 - 30)",
+    "code_system": "99607",
+    "code_value": "(15 - 30)-99607",
+    "definition": null,
+    "display": null,
+    "is_fhir_defined": 0,
+    "oid": null,
+    "parent": "New CMR Service",
+    "parentfield": "custom_medical_codes",
+    "parenttype": "Appointment Type",
+    "system": "99607"
+   },
+   {
+    "code": "(30 - 45)",
+    "code_system": "99607",
+    "code_value": "(30 - 45)-99607",
+    "definition": null,
+    "display": null,
+    "is_fhir_defined": 0,
+    "oid": null,
+    "parent": "New CMR Service",
+    "parentfield": "custom_medical_codes",
+    "parenttype": "Appointment Type",
+    "system": "99607"
+   },
+   {
+    "code": "(45 - 60)",
+    "code_system": "99607",
+    "code_value": "(45 - 60)-99607",
+    "definition": null,
+    "display": null,
+    "is_fhir_defined": 0,
+    "oid": null,
+    "parent": "New CMR Service",
+    "parentfield": "custom_medical_codes",
+    "parenttype": "Appointment Type",
+    "system": "99607"
+   }
+  ],
+  "custom_orig_description": null,
+  "custom_questionnaire_template": [],
+  "custom_service_type": "CMR Service",
+  "default_duration": 60,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [],
+  "modified": "2024-03-29 19:21:33.430557",
+  "name": "New CMR Service",
+  "price_list": null
+ },
+ {
+  "allow_booking_for": "Service Unit",
+  "appointment_type": "Flu Shot",
+  "color": "#39E4A5",
+  "custom_accept_cash_payments": 1,
+  "custom_accept_medical_billing": 0,
+  "custom_accept_rx_biling": 0,
+  "custom_default_followup": 0,
+  "custom_medical_codes": [],
+  "custom_orig_description": "<div class=\"ql-editor read-mode\"><p>This is a flu shot appontment description. Where is this showing up? </p></div>",
+  "custom_questionnaire_template": [
+   {
+    "parent": "Flu Shot",
+    "parentfield": "custom_questionnaire_template",
+    "parenttype": "Appointment Type",
+    "questionnaire_template": "QUES-TEMPL-002"
+   }
+  ],
+  "custom_service_type": "Immunization Service",
+  "default_duration": 10,
+  "docstatus": 0,
+  "doctype": "Appointment Type",
+  "items": [
+   {
+    "dn": "Coimbatore - RT",
+    "dt": "Healthcare Service Unit",
+    "inpatient_visit_charge": 0.0,
+    "inpatient_visit_charge_item": null,
+    "op_consulting_charge": 0.0,
+    "op_consulting_charge_item": null,
+    "parent": "Flu Shot",
+    "parentfield": "items",
+    "parenttype": "Appointment Type"
+   }
+  ],
+  "modified": "2024-03-30 02:17:13.035654",
+  "name": "Flu Shot",
+  "price_list": null
+ }
+]

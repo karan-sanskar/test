@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-08 18:50:21.671823",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "condition",
+  "add_relative",
+  "relatives"
+ ],
+ "fields": [
+  {
+   "fieldname": "condition",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Condition",
+   "options": "Medical Condition"
+  },
+  {
+   "fieldname": "add_relative",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Add Relative",
+   "options": "Relative"
+  },
+  {
+   "fieldname": "relatives",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Relatives"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-08 20:04:55.190220",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Relative Medical Condition",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

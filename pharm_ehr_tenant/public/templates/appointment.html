@@ -1,0 +1,175 @@
+<div class="patient-appointment">
+	<div class="new-btn pb-3" style="padding:0">
+		<!-- <span class= "pd-0">
+			<button class="btn btn-sm small new-appointment-btn mr-1">
+				<svg class="icon icon-sm">
+					<use href="#icon-small-add"></use>
+				</svg>
+				{{ __("New Appointment") }}
+			</button>
+		</span> -->
+	</div>
+	<div class="section-body">
+		<div class="open-appointment pr-1">
+			<div class="open-section-head">
+				<span class="ml-2">{{ __("Open Appointments") }}</span>
+			</div>
+			{% if (column.length) { %}
+				{% for(var i=0, l=column.length; i<l; i++) { %}
+					<div class="single-appointment">
+						<div class="flex justify-between mb-2">
+							<div class="row label-area font-md ml-1">
+								<span class="mr-2">
+									<svg class="icon icon-sm">
+										<use href="#icon-link-url"></use>
+									</svg>
+								</span>
+                                {% if (column[i].status == "Open") { %}
+                                    <a href="/app/patient-appointment/{{ column[i].name }}" title="{{ __('Open Appointment') }}" style=" background-color: rgb(254, 215, 215);color: rgb(191, 38, 38);padding: 2px 4px;text-align: center;border-radius: 4px;">Draft</a>
+                                {% } else  if (column[i].status == "Scheduled") { %}
+                                    <a href="/app/patient-appointment/{{ column[i].name }}" title="{{ __('Open Appointment') }}" style=" background-color: rgb(246, 231, 206);color: rgb(209, 141, 25);padding: 2px 4px;text-align: center;border-radius: 5px;">{%= column[i].status %}</a>
+                                {% } else  if (column[i].status == "No Show") { %}
+                                    <a href="/app/patient-appointment/{{ column[i].name }}" title="{{ __('Open Appointment') }}" style=" background-color: rgb(217, 215, 212);color: rgb(82, 79, 79);padding: 2px 4px;text-align: center;border-radius: 5px;">{%= column[i].status %}</a>
+                                {% } else  if (column[i].status == "Completed") { %}
+                                    <a href="/app/patient-appointment/{{ column[i].name }}" title="{{ __('Open Appointment') }}" style=" background-color: rgb(216, 246, 228);color: rgb(16, 110, 27);padding: 2px 4px;text-align: center;border-radius: 5px;">{%= column[i].status %}</a>
+                                {% } %}
+                                <div style="padding-left: 20px;"> {% if (column[i].status == "Open" || column[i].status == "Scheduled") { %}<button class="btn mr-2 edit-date-and-time" value="{{ column[i].name }}" id="{{ column[i].name }}" data-date="{{column[i].date}}" data-time="{{column[i].time.split(".")[0]}}" style="padding-left: 2px;"><u>Edit</u>
+                                    
+                                </button>{% } %}</div>
+                               
+								<!-- <a href="/app/patient-appointment/{{ column[i].name }}" title="{{ __('Open Appointment') }}" style=" background-color: rgb(245, 194, 194);color: rgb(233, 21, 21);padding: 4px 8px;text-align: center;border-radius: 5px;"> -->
+                                <!-- {% if (column[i].status == "Open") { %}Draft{% else %}{%= column[i].status %}{% } %}</a> -->
+							</div>
+						</div>
+                        
+                        {% if(column[i].service_unit) { %}
+                            <div class="text-muted  ml-1">
+                                {{ __("Scheduled in:") }}
+                                <a href="/app/healthcare-service-unit/{{ column[i].service_unit }}" title="{{ __('Open Service Unit') }}">
+                                {%= column[i].service_unit %}</a> | {% if(column[i].appointment_type) { %}
+                                {%= column[i].appointment_type %}
+                                on {% if(column[i].date) { %}
+                                    {%= frappe.datetime.global_date_format(column[i].date) %} | {%= column[i].time.split(".")[0] %}
+                                    {% } %}
+                                {% } %}
+                            </div>
+                        {% } %}
+						</div>
+			    {% } %}
+            {% } else { %}
+                <div class="single-appointment no-appointment text-muted">
+                    {{ __("No open Appointment") }}
+                </div>
+		    {% } %}
+		</div>
+        {% if (column2.length) { %}
+            <div class="open-appointment2 pr-1">
+                <div class="open-section-head">
+                    <span class="ml-2"></span>
+                </div>
+                {% if (column2.length) { %}
+                    {% for(var i=0, l=column2.length; i<l; i++) { %}
+                        <div class="single-appointment">
+                            <div class="flex justify-between mb-2">
+                                <div class="row label-area font-md ml-1">
+                                    <span class="mr-2">
+                                        <svg class="icon icon-sm">
+                                            <use href="#icon-link-url"></use>
+                                        </svg>
+                                    </span>
+                                    <a href="/app/patient-appointment/{{ column2[i].name }}" title="{{ __('Open Appointment') }}">
+                                        {%= column2[i].name %} 
+                                    </a>| {%= column2[i].status %}
+                                </div>
+                            </div>
+                            {% if(column2[i].appointment_type) { %}
+                                <div class=" ml-1">
+                                    {%= column2[i].appointment_type %}
+                                </div>
+                            {% } %}
+                            {% if(column2[i].practitioner) { %}
+                                <div class="text-muted  ml-1">
+                                    {{ __("Scheduled With:") }}
+                                    <a href="/app/healthcare-practitioner/{{ column2[i].practitioner }}" title="{{ __('Open Healthcare Practitioner') }}">
+                                    {%= column2[i].practitioner_name %}</a>
+                                </div>
+                            {% } %}
+                            {% if(column2[i].date) { %}
+                                <div class=" ml-1">
+                                    {%= frappe.datetime.global_date_format(column2[i].date) %} | {%= column2[i].time %}
+                                </div>
+                            {% } %}
+                            {% if(column2[i].event) { %}
+                                <div class=" ml-1">
+                                    Event -  <a href="/app/event/{{ column2[i].event }}" title="{{ __('Open Event') }}">
+                                        {%=  column2[i].event %}
+                                    </a>
+                                </div>
+                            {% } %}
+                            </div>
+                    {% } %}
+                {% } else { %}
+                    <div class="single-appointment no-appointment text-muted">
+                        {{ __("No open Appointment") }}
+                    </div>
+                {% } %}
+            </div>
+        {% } %}
+        </div>
+	</div>
+</div>
+
+
+<style>
+.patient-appointment {
+	min-height: 50px;
+	padding-left: 0px;
+	padding-bottom: 15px !important;
+}
+
+.patient-appointment .new-btn {
+	text-align: left;
+}
+
+.single-appointment {
+	min-height: 90px;
+	border: 1px solid var(--border-color);
+	padding: 10px;
+	border-bottom: 0;
+	padding-right: 0;
+}
+
+.single-appointment:last-child {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.single-appointment:hover{
+	background-color: #ededed;
+}
+
+.open-appointment {
+	width: 100%;
+}
+
+.open-appointment2 {
+	width: 50%;
+}
+
+.open-appointment2:first-child {
+	border-right: 0;
+}
+
+.open-section-head {
+	background-color: var(--bg-color);
+	min-height: 30px;
+	border-bottom: 1px solid var(--border-color);
+	padding: 10px;
+	font-weight: bold;
+}
+
+.no-appointment {
+    text-align: center;
+    padding-top: 30px;
+}
+
+</style>

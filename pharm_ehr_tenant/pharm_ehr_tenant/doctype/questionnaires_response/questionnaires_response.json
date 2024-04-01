@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QUES-ANS-{###}",
+ "creation": "2024-02-09 01:37:58.163310",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_name",
+  "vaccine_type",
+  "column_break_jisd",
+  "form_type",
+  "section_break_kime",
+  "cmr_questions",
+  "section_break_royw",
+  "vaccine_questions"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jisd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "form_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Form Type",
+   "options": "CMR Service\nImmunization Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_kime",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.form_type == \"CMR Service\"",
+   "fieldname": "cmr_questions",
+   "fieldtype": "Table",
+   "label": "CMR Questions",
+   "options": "Check Type Questions"
+  },
+  {
+   "depends_on": "eval:doc.form_type == \"Immunization Service\"",
+   "fieldname": "section_break_royw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vaccine_questions",
+   "fieldtype": "Table",
+   "label": "Vaccine Questions",
+   "options": "Multi Check Type Questions"
+  },
+  {
+   "depends_on": "eval:doc.form_type == \"Immunization Service\"",
+   "fieldname": "vaccine_type",
+   "fieldtype": "Link",
+   "label": "Appointment Type",
+   "options": "Appointment Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 21:05:26.455825",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Questionnaires Response",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

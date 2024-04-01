@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{service_type}-{service_name}",
+ "creation": "2024-01-30 05:30:23.318189",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_type",
+  "column_break_chjr",
+  "service_name",
+  "section_break_xxly",
+  "eligibility_html",
+  "eligibility_html_orig",
+  "eligibility"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "label": "Service Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "column_break_chjr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Service Name",
+   "options": "service_type"
+  },
+  {
+   "fieldname": "section_break_xxly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "eligibility_html",
+   "fieldtype": "HTML",
+   "label": "Eligibility HTML",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eligibility",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Eligibility",
+   "options": "Eligibility Check for CMR"
+  },
+  {
+   "fieldname": "eligibility_html_orig",
+   "fieldtype": "HTML",
+   "label": "Eligibility HTML Orig",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-08 01:49:54.029978",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Eligibility Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

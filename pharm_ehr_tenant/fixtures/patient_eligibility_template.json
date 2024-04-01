@@ -1,0 +1,86 @@
+[
+ {
+  "code_etoe": "((criteria_1 AND criteria_2 AND criteria_3 AND criteria_4 AND criteria_6 AND criteria_7) OR (criteria_1 AND criteria_2 AND criteria_3 AND criteria_5 AND criteria_6 AND criteria_7))",
+  "criteria": [
+   {
+    "criteria": "An outpatient (not inpatient or in an institutional setting)",
+    "parent": "sssssxz",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "Not eligible for Medicare Part D",
+    "parent": "sssssxz",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "<div class=\"ql-editor read-mode\"><p>Prescribed and currently taking a qualified specialty drug within the covered specialty drug categories as identified by the following disease state categories:</p><p class=\"ql-indent-1\">a. Diabetes,</p><p class=\"ql-indent-1\">b. Asthma/Chronic Obstructive Pulmonary Diseases (COPD) </p><p class=\"ql-indent-1\">c. Hypertension</p><p class=\"ql-indent-1\">d. Cardiovascular diseases</p><p class=\"ql-indent-1\">e. Severe mental health disorders</p><p class=\"ql-indent-1\">f. HIV/AIDS</p><p class=\"ql-indent-1\">g. Hepatitis C (HCV)</p><p class=\"ql-indent-1\">h. Cancer</p><p class=\"ql-indent-1\">i. Blood Factors or Hemlibra for the treatment of Bleeding disorders</p><p class=\"ql-indent-1\">j. Dyslipidemia</p><p class=\"ql-indent-1\">k. Bone Disease-Arthritis (such as Osteoporosis, Osteoarthritis, or Rheumatoid Arthritis)</p><p class=\"ql-indent-1\">l. Alzheimer’s Disease</p><p class=\"ql-indent-1\">m. End-Stage Renal Disease (ESRD)</p></div>",
+    "parent": "sssssxz",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   }
+  ],
+  "custom_template_name": null,
+  "docstatus": 0,
+  "doctype": "Patient Eligibility Template",
+  "make_this_default": 0,
+  "modified": "2024-03-29 18:45:42.404396",
+  "name": "sssssxz",
+  "service_type": "CMR Service"
+ },
+ {
+  "code_etoe": "((criteria_1 AND criteria_2 AND criteria_3 AND criteria_4 AND criteria_6 AND criteria_7) OR (criteria_1 AND criteria_2 AND criteria_3 AND criteria_5 AND criteria_6 AND criteria_7))",
+  "criteria": [
+   {
+    "criteria": "An outpatient (not inpatient or in an institutional setting)",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "Not eligible for Medicare Part D",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "<div class=\"ql-editor read-mode\"><p>Prescribed and currently taking a qualified specialty drug within the covered specialty drug categories as identified by the following disease state categories:</p><p class=\"ql-indent-1\">a. Diabetes,</p><p class=\"ql-indent-1\">b. Asthma/Chronic Obstructive Pulmonary Diseases (COPD) </p><p class=\"ql-indent-1\">c. Hypertension</p><p class=\"ql-indent-1\">d. Cardiovascular diseases</p><p class=\"ql-indent-1\">e. Severe mental health disorders</p><p class=\"ql-indent-1\">f. HIV/AIDS</p><p class=\"ql-indent-1\">g. Hepatitis C (HCV)</p><p class=\"ql-indent-1\">h. Cancer</p><p class=\"ql-indent-1\">i. Blood Factors or Hemlibra for the treatment of Bleeding disorders</p><p class=\"ql-indent-1\">j. Dyslipidemia</p><p class=\"ql-indent-1\">k. Bone Disease-Arthritis (such as Osteoporosis, Osteoarthritis, or Rheumatoid Arthritis)</p><p class=\"ql-indent-1\">l. Alzheimer’s Disease</p><p class=\"ql-indent-1\">m. End-Stage Renal Disease (ESRD)</p></div>",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "Patient is taking a single medication which Medi-Cal reimbursement\nexceeds $75,000 per year.",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "Patient is taking five or more chronic medications (including prescription\nand nonprescription medications, herbal products, and other dietary\nsupplements)\n",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "<div class=\"ql-editor read-mode\"><p>Patient meets at least one of the following risk of treatment failure criteria:</p><p class=\"ql-indent-1\">a. Patient is receiving care from more than one prescriber</p><p class=\"ql-indent-1\">b. Patient has laboratory values outside the normal range that could be caused by or may be improved with medication therapy</p><p class=\"ql-indent-1\">c. Patient has demonstrated non-adherence (including underuse and overuse) to a medication regimen for more than 3 months</p><p class=\"ql-indent-1\">d. Patient has limited health literacy or socio-cultural challenges, requiring special communication strategies to optimize care</p><p class=\"ql-indent-1\">e. Patient has recently experienced an adverse event (medication or non-medication-related) while receiving care</p><p class=\"ql-indent-1\">f. Patient is taking high-risk medication(s), including narrow therapeutic index drugs (e.g., warfarin, phenytoin, methotrexate, digoxin)</p><p class=\"ql-indent-1\">g. Patient has history of E.D. visits/hospitalization related to medication compliance/adherence</p><p class=\"ql-indent-1\">h. Patient was recently discharged from a hospital or Skilled Nursing Facility (SNF) within 14 days and prescribed a new medication regimen.</p><p class=\"ql-indent-1\">j. Patient was referred to MTM services by a health care provider.</p></div>",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   },
+   {
+    "criteria": "An eligible beneficiary must be agree to participate and can choose to opt\nout at any time.",
+    "parent": "Medi-cal MTM",
+    "parentfield": "criteria",
+    "parenttype": "Patient Eligibility Template"
+   }
+  ],
+  "custom_template_name": "Medi-Cal MTM",
+  "docstatus": 0,
+  "doctype": "Patient Eligibility Template",
+  "make_this_default": 1,
+  "modified": "2024-03-14 09:41:59.651995",
+  "name": "Medi-cal MTM",
+  "service_type": "CMR Service"
+ }
+]

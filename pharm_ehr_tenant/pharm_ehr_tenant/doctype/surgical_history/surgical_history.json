@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-08 21:46:46.479690",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "surgery",
+  "year"
+ ],
+ "fields": [
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Year",
+   "options": "Year"
+  },
+  {
+   "fieldname": "surgery",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Surgery",
+   "options": "Surgery"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-07 04:16:33.757418",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Surgical History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

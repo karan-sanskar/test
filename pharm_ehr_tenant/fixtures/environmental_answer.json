@@ -1,0 +1,101 @@
+[
+ {
+  "answer": "Yes. My current job is:",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:54:36.979330",
+  "name": "ANS-01",
+  "naming_series": "ANS-.##",
+  "question": "QUES-01"
+ },
+ {
+  "answer": "No, I'm unemployed.",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:54:51.106912",
+  "name": "ANS-02",
+  "naming_series": "ANS-.##",
+  "question": "QUES-01"
+ },
+ {
+  "answer": "No, I'm retired",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:55:09.003163",
+  "name": "ANS-03",
+  "naming_series": "ANS-.##",
+  "question": "QUES-01"
+ },
+ {
+  "answer": "No, I'm on disability",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:55:18.202400",
+  "name": "ANS-04",
+  "naming_series": "ANS-.##",
+  "question": "QUES-01"
+ },
+ {
+  "answer": "Yes, I'm in school for",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:55:26.098192",
+  "name": "ANS-05",
+  "naming_series": "ANS-.##",
+  "question": "QUES-01"
+ },
+ {
+  "answer": "House or Apartment (Stable/Permanent)",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:55:42.674694",
+  "name": "ANS-06",
+  "naming_series": "ANS-.##",
+  "question": "QUES-02"
+ },
+ {
+  "answer": "With friends/family (Temporary)",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:55:51.755371",
+  "name": "ANS-07",
+  "naming_series": "ANS-.##",
+  "question": "QUES-02"
+ },
+ {
+  "answer": "In a Single Room Occupancy (SRO) Hotel since",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:55:58.698770",
+  "name": "ANS-08",
+  "naming_series": "ANS-.##",
+  "question": "QUES-02"
+ },
+ {
+  "answer": "In a Residential Treatment Program",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:56:14.386613",
+  "name": "ANS-09",
+  "naming_series": "ANS-.##",
+  "question": "QUES-02"
+ },
+ {
+  "answer": "In a Vehicle",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:56:28.963161",
+  "name": "ANS-10",
+  "naming_series": "ANS-.##",
+  "question": "QUES-02"
+ },
+ {
+  "answer": "On the Street",
+  "docstatus": 0,
+  "doctype": "Environmental Answer",
+  "modified": "2024-02-09 03:56:37.779463",
+  "name": "ANS-11",
+  "naming_series": "ANS-.##",
+  "question": "QUES-02"
+ }
+]

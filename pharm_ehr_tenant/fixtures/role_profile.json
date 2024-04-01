@@ -1,0 +1,65 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-01-31 04:41:04.357292",
+  "name": "Pharmacist",
+  "role_profile": "Pharmacist",
+  "roles": [
+   {
+    "parent": "Pharmacist",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Pharmacist"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-01-31 04:41:23.319418",
+  "name": "Healthcare Staff",
+  "role_profile": "Healthcare Staff",
+  "roles": [
+   {
+    "parent": "Healthcare Staff",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Healthcare Staff"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-01-31 04:41:45.707467",
+  "name": "Healthcare (All)",
+  "role_profile": "Healthcare (All)",
+  "roles": [
+   {
+    "parent": "Healthcare (All)",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Healthcare Administrator"
+   },
+   {
+    "parent": "Healthcare (All)",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Healthcare Manager"
+   },
+   {
+    "parent": "Healthcare (All)",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Healthcare Staff"
+   },
+   {
+    "parent": "Healthcare (All)",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Pharmacist"
+   }
+  ]
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-01-15 02:22:37.497861",
+  "name": "Dispatch Notification",
+  "response": "<h1>Dispatch Notification</h1>\n<h3>Details:</h3>\n<table class=\"table table-bordered small\" style=\"max-width: 500px;\">\n    <tbody>\n        <tr>\n            <td>Customer's Name</td>\n            <td>{{ customer }}</td>\n        </tr>\n        <tr>\n            <td>Contact's Name</td>\n            <td>{{ first_name }} {{ last_name }}</td>\n        </tr>\n        <tr>\n            <td>Address Name</td>\n            <td>{{ address }}</td>\n        </tr>\n        <tr>\n            <td>Address Details</td>\n            <td>{{ customer_address }}</td>\n        </tr>\n        <tr>\n            <td>Order Number</td>\n            <td>{{ delivery_note }}</td>\n        </tr>\n        <tr>\n            <td>Order Total</td>\n            <td>{{ grand_total }}</td>\n        </tr>\n        <tr>\n            <td>Departure Time</td>\n            <td>{{ departure_time }}</td>\n        </tr>\n        <tr>\n            <td>Estimated Arrival</td>\n            <td>{{ estimated_arrival }}</td>\n        </tr>\n        <tr>\n            <td>Driver's Name</td>\n            <td>{{ driver_name }}</td>\n        </tr>\n        <tr>\n            <td>Driver's Number</td>\n            <td>{{ cell_number }}</td>\n        </tr>\n        <tr>\n            <td>Vehicle Number</td>\n            <td>{{ vehicle }}</td>\n        </tr>\n    </tbody>\n</table>\n",
+  "response_html": null,
+  "subject": "Your order is out for delivery!",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 03:07:40.266821",
+  "name": "Completion of Booking",
+  "response": "<div class=\"ql-editor read-mode\"><p>Dear {{customer}},</p><p><br></p><p>Thank you for choosing {{company}}! We are delighted to confirm the completion of your booking for the {{service_name}}.</p><p><br></p><p>Booking Details:</p><p>- Service: {{Service_name}}</p><p>- Date: {{appointment_date}}</p><p>- Time: {{appointment_time}}</p><p>- Booking Reference Number: {{name}}</p><p><br></p><p>We appreciate your trust in our services. If you have any questions or need to make changes to your booking, please contact us at {{Your_Contact_Number}} or reply to this email.</p><p><br></p><p>We look forward to providing you with a seamless and enjoyable experience. Thank you for choosing {{company}}.</p><p><br></p><p>Best regards,</p><p>{{company}}</p></div>",
+  "response_html": null,
+  "subject": "Booking Confirmation - {{Service_Name}}",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 00:19:52.588872",
+  "name": "Booking Feedback",
+  "response": "<div class=\"ql-editor read-mode\"><p>Dear [Customer_Name],</p><p><br></p><p>Thank you for choosing [Your_Company_Name] for your recent [Service_Name]. We hope your experience was satisfactory.</p><p><br></p><p>To help us enhance our services, we would greatly appreciate your feedback. Your thoughts are important to us, and your input will assist us in providing better service in the future.</p><p><br></p><p>Please take a moment to share your feedback by clicking on the following link: [Feedback_Survey_Link]</p><p><br></p><p>If you have any specific comments or suggestions, feel free to reply to this email.</p><p><br></p><p>Thank you for your time and for being a valued customer of [Your_Company_Name].</p><p><br></p><p>Best regards,</p><p>[Your_Company_Name]</p><p><br></p></div>",
+  "response_html": null,
+  "subject": "Provide feedback to the company with the service that was completed. ",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 03:11:19.253028",
+  "name": "Patient Account Creation",
+  "response": "<div class=\"ql-editor read-mode\"><p>Dear {{first_name}},</p><p><br></p><p>Welcome to [Your_Clinic_Name]! We are thrilled to have you as a new patient. Your account has been successfully created, and we look forward to providing you with excellent healthcare services.</p><p><br></p><p>Here are your account details:</p><p>- Patient ID: {{name}}</p><p>- Username:{{email}}</p><p><br></p><p>With your account, you can easily manage appointments, view your medical history, and receive important updates. If you have any questions or need assistance, feel free to contact our support team at [Clinic_Support_Phone] or [Clinic_Support_Email].</p><p><br></p><p>Thank you for choosing [Your_Clinic_Name]. We're here to support your health journey.</p><p><br></p><p>Best regards,</p><p>[Your_Clinic_Name]</p></div>",
+  "response_html": null,
+  "subject": " New account creation and welcoming patient",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 00:23:46.611555",
+  "name": "Staff Account Creation",
+  "response": "<div class=\"ql-editor read-mode\"><p>Dear [Staff_First_Name],</p><p><br></p><p>Welcome to [Your_Company_Name]! We are delighted to have you on board as a new member of our team. Your account has been successfully created, and we look forward to working together to achieve great things.</p><p><br></p><p>Here are your account details:</p><p>- Staff ID: [Staff_ID]</p><p>- Username: [Staff_Username]</p><p><br></p><p>With your account, you'll be able to access important resources, collaborate with your team, and stay updated on company news. If you have any questions or need assistance, please feel free to reach out to our HR department at [HR_Contact_Phone] or [HR_Contact_Email].</p><p><br></p><p>Once again, welcome to the [Your_Company_Name] family. We're excited to have you with us!</p><p><br></p><p>Best regards,</p><p>[Your_Company_Name]</p><p><br></p></div>",
+  "response_html": null,
+  "subject": "Welcome to [Your_Company_Name]!",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 00:47:58.590816",
+  "name": "Password Reset Confirmation",
+  "response": "<div class=\"ql-editor read-mode\"><p>Dear [User_Name],</p><p><br></p><p>This is to confirm that your password for [Your_Account_Name] has been successfully reset. If you did not initiate this request, please contact our support team immediately at [Support_Email] or [Support_Phone].</p><p><br></p><p>Thank you for maintaining the security of your account.</p><p><br></p><p>Best regards,</p><p>[Your_Company_Name]</p><p><br></p></div>",
+  "response_html": null,
+  "subject": "Password reset confirmation",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 00:49:25.194427",
+  "name": "Availability of New Report",
+  "response": "<div class=\"ql-editor read-mode\"><p>Dear [User_Name],</p><p><br></p><p>We are pleased to inform you that a new report, [Report_Name], is now available in your account. You can access and view the details by logging into your account on [Your_Website_Link].</p><p><br></p><p>If you have any questions or need assistance, feel free to contact our support team at [Support_Email] or [Support_Phone].</p><p><br></p><p>Thank you for choosing [Your_Company_Name]. We appreciate the opportunity to serve you.</p><p><br></p><p>Best regards,</p><p>[Your_Company_Name]</p><p><br></p></div>",
+  "response_html": null,
+  "subject": " New Report Available - [Report_Name]",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 00:52:25.109870",
+  "name": "Service Marketing Emails",
+  "response": "<div class=\"ql-editor read-mode\"><p>Hi Responsible Party for {{user_nm}},</p><p><br></p><p>With your consent, {{user_nm}} will be scheduled for an upcoming appointment for vaccine(s). Vaccines will be provided and administered by {{company_name}}, a Vaccine Specialty Pharmacy. The focus is {{Service1}}, {{Service2}}, {{Service3}}. As the medically responsible party for the resident, we are requesting your consent to provide vaccines for {{user_nm}}.</p><p><br></p><p>To provide your consent, please click the blue login button below. This will take you to the patient profile consent form. Please answer all the consent form questions. The vaccines that you will see in the portal are potential vaccines for which {{user_nm}} is due and will be confirmed according to information in the California Immunization Registry and the patient's medical record. Please select the vaccines for which you provide your consent. Note that {{user_nm}} will only receive vaccines that are due, and providing your consent does not necessarily mean {{user_nm}} will receive all vaccines at the same time. Rather, this selection will allow {{company_name}} to ensure {{user_nm}} is vaccinated according to your consent. Please read the patient informed consent, and then provide consent by typing your name, relationship to {{user_nm}}, and phone number at the bottom. Finally, check the box that attests you are the medically responsible party for {{user_nm}} and click Save.</p><p><br></p><p>Once this is completed, you will be directed back to the patient dashboard. In order to access vaccinations for {{user_nm}} by {{company_name}} in the future, please click \"set a password\" at the top of the page. This will allow you to set a password and log in to view the profile for {{user_nm}}.</p><p><br></p><p>We are happy to answer any questions you may have about this process.</p><p><br></p><p>Provider: {{account_nm}}</p><p>What: {{subject}}</p><p>Where: {{location}} - View Map</p></div>",
+  "response_html": null,
+  "subject": "Calendar-event-appointment-invite",
+  "use_html": 0
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Email Template",
+  "modified": "2024-03-08 03:37:59.181369",
+  "name": "Calendar-event-appointment-invite",
+  "response": "<div class=\"ql-editor read-mode\"><p>Hii Responsible Party for {{user_nm}},</p><p><br></p><p>With your consent, {{user_nm}} will be scheduled for an upcoming appointment to receive vaccines. These vaccines will be provided and administered by {{company_name}}, a Vaccine Specialty Pharmacy, with a focus on {{Service1}}, {{Service2}}, and {{Service3}}. As the medically responsible party for the resident, we kindly request your consent to proceed with the vaccination process for {{user_nm}}.</p><p><br></p><p>To provide your consent, please click the blue login button below. This will redirect you to the patient profile consent form. Ensure to answer all the questions on the consent form. The vaccines displayed in the portal are potential vaccines that {{user_nm}} is due for, and the final selection will be confirmed based on information from the California Immunization Registry and the patient's medical record. Please select the vaccines for which you provide consent. Note that {{user_nm}} will only receive vaccines that are due, and providing your consent does not necessarily mean {{user_nm}} will receive all vaccines at the same time. Your selection will enable {{company_name}} to ensure that {{user_nm}} is vaccinated according to your preferences. After reading the patient informed consent, provide your consent by typing your name, relationship to {{user_nm}}, and phone number at the bottom. Finally, check the box confirming that you are the medically responsible party for {{user_nm}} and click Save.</p><p><br></p><p>Once completed, you will be directed back to the patient dashboard. To access future vaccination information for {{user_nm}} by {{company_name}}, please click \"set a password\" at the top of the page. This will allow you to set a password and log in to view {{user_nm}}'s profile.</p><p><br></p><p>Should you have any questions regarding this process, please do not hesitate to reach out.</p><p><br></p><p>Provider: {{account_nm}}</p><p>What: {{subject}}</p><p>Where: {{location}}</p></div>",
+  "response_html": null,
+  "subject": "Calendar-event-appointment-invite",
+  "use_html": 0
+ }
+]

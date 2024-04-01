@@ -1,0 +1,44 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Relative",
+  "modified": "2024-02-06 22:56:25.400915",
+  "name": "Mother",
+  "relation": "Mother"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relative",
+  "modified": "2024-02-06 22:56:45.715367",
+  "name": "Father",
+  "relation": "Father"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relative",
+  "modified": "2024-02-06 22:56:54.573768",
+  "name": "Sibling",
+  "relation": "Sibling"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relative",
+  "modified": "2024-02-06 22:57:05.232818",
+  "name": "Grandmother",
+  "relation": "Grandmother"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relative",
+  "modified": "2024-02-06 22:57:18.856884",
+  "name": "Grandfather",
+  "relation": "Grandfather"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relative",
+  "modified": "2024-02-06 22:57:28.711353",
+  "name": "Children",
+  "relation": "Children"
+ }
+]

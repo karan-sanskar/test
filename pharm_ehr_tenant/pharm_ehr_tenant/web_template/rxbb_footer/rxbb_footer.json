@@ -1,0 +1,14 @@
+{
+ "__islocal": true,
+ "docstatus": 0,
+ "doctype": "Web Template",
+ "fields": [],
+ "idx": 0,
+ "modified": "2024-04-01 23:00:52.376365",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "RXBB Footer",
+ "standard": 1,
+ "template": "",
+ "type": "Footer"
+}

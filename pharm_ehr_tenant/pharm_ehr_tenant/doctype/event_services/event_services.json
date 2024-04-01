@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-20 02:38:00.078985",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_type",
+  "vaccine_type",
+  "vaccine_name",
+  "questionnaires_template"
+ ],
+ "fields": [
+  {
+   "columns": 5,
+   "fetch_from": "vaccine_type.custom_service_type",
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Type",
+   "options": "DocType"
+  },
+  {
+   "columns": 3,
+   "fieldname": "vaccine_name",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Vaccine Name",
+   "options": "Medication"
+  },
+  {
+   "columns": 5,
+   "fieldname": "vaccine_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Appointment Type",
+   "options": "Appointment Type"
+  },
+  {
+   "fieldname": "questionnaires_template",
+   "fieldtype": "HTML",
+   "label": "Questionnaires Template",
+   "options": "<p>Hellow</p>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-01 03:29:01.771655",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Event Services",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

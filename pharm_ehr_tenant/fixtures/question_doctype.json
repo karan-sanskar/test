@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "Immunization Service",
+  "input_type": "Yes/No/NA",
+  "modified": "2024-02-13 21:18:02.762131",
+  "name": "Immunization Service-007",
+  "question": "<div class=\"ql-editor read-mode\"><p>Have you ever had a serious reaction after receiving a vaccination? ¿Tuvo alguna vez una reacción seria después de</p><p>vacunarse?</p></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "CMR Service",
+  "input_type": "Descriptive",
+  "modified": "2024-02-21 21:33:24.197069",
+  "name": "CMR Service-011",
+  "question": "<div class=\"ql-editor read-mode\"><p>saf</p></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "CMR Service",
+  "input_type": "Yes/No/NA",
+  "modified": "2024-03-18 09:16:29.883463",
+  "name": "CMR Service-030",
+  "question": "<div class=\"ql-editor read-mode\"><p>Is the patient immunocompromised?</p><p><br></p><p>Immunocompromised people include those who have:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Been receiving active cancer treatment for tumors or cancers of the blood</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received an organ transplant and are taking medicine to suppress the immune system</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received a stem cell transplant within the last 2 years or are taking medicine to suppress the immune system</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received CAR-T-cell therapy, hematocrit therapy (HCT)</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Moderate or severe primary immunodeficiency (such as DiGeorge syndrome, Wiskott-Aldrich syndrome)</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Advanced or untreated HIV infection</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Active treatment with high-dose corticosteroids or other drugs that may suppress your immune response</li></ol></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "Immunization Service",
+  "input_type": "Yes/No/NA",
+  "modified": "2024-03-18 09:17:43.160439",
+  "name": "Immunization Service-031",
+  "question": "<div class=\"ql-editor read-mode\"><p>Is the patient immunocompromised?</p><p>Immunocompromised people include those who have:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Been receiving active cancer treatment for tumors or cancers of the blood</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received an organ transplant and are taking medicine to suppress the immune system</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received a stem cell transplant within the last 2 years or are taking medicine to suppress the immune system</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received CAR-T-cell therapy, hematocrit therapy (HCT)</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Moderate or severe primary immunodeficiency (such as DiGeorge syndrome, Wiskott-Aldrich syndrome)</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Advanced or untreated HIV infection</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Active treatment with high-dose corticosteroids or other drugs that may suppress your immune response</li></ol></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "CMR Service",
+  "input_type": "Descriptive",
+  "modified": "2024-02-13 21:13:29.978056",
+  "name": "CMR Service-004",
+  "question": "<div class=\"ql-editor read-mode\"><p>What is your name?</p></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "Immunization Service",
+  "input_type": "Yes/No/NA",
+  "modified": "2024-02-13 21:23:19.889868",
+  "name": "Immunization Service-008",
+  "question": "<div class=\"ql-editor read-mode\"><p>Have you ever received a COVID-19 vaccine? ¿Ha recibido alguna vez una vacuna contra el COVID-19?</p><p>a. Date of Last Dose. Fecha de la última dosis: _____________</p></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "Immunization Service",
+  "input_type": "Yes/No/NA",
+  "modified": "2024-02-13 21:17:35.812608",
+  "name": "Immunization Service-006",
+  "question": "<div class=\"ql-editor read-mode\"><p>Do you have allergies to medications, food, a vaccine component, or latex? ¿Es alérgico a algún medicamento, alimento, a</p><p>algún componente de las vacunas o al látex?</p></div>"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Question Doctype",
+  "form_type": "Immunization Service",
+  "input_type": "Yes/No/NA",
+  "modified": "2024-02-13 21:14:49.683612",
+  "name": "Immunization Service-005",
+  "question": "<div class=\"ql-editor read-mode\"><p>Are you sick today? ¿Está enfermo hoy?</p></div>"
+ }
+]

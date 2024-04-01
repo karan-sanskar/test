@@ -1,0 +1,156 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:34:00.585031",
+  "name": "Appendix removal",
+  "surgery_name": "Appendix removal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:34:55.370242",
+  "name": "Tonsils removal",
+  "surgery_name": "Tonsils removal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:35:23.439225",
+  "name": "Hernia repair",
+  "surgery_name": "Hernia repair"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:35:33.599017",
+  "name": "Gall bladder removal",
+  "surgery_name": "Gall bladder removal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:35:51.495766",
+  "name": "Orthopaedic",
+  "surgery_name": "Orthopaedic"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:37:35.077693",
+  "name": "Unilateral mastectomy",
+  "surgery_name": "Unilateral mastectomy"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:38:04.183699",
+  "name": "Not Listed",
+  "surgery_name": "Not Listed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:40:10.040445",
+  "name": "Breast Lumpectomy",
+  "surgery_name": "Breast Lumpectomy"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:40:22.489328",
+  "name": "Breast Reduction",
+  "surgery_name": "Breast Reduction"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:40:30.680072",
+  "name": "Bilateral Mastectomy",
+  "surgery_name": "Bilateral Mastectomy"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:40:38.382589",
+  "name": "Hysterectomy",
+  "surgery_name": "Hysterectomy"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:42:06.518583",
+  "name": "Oophorectomy",
+  "surgery_name": "Oophorectomy"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:42:36.015672",
+  "name": "Metoidioplasty",
+  "surgery_name": "Metoidioplasty"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:43:15.072885",
+  "name": "Phalloplasty",
+  "surgery_name": "Phalloplasty"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:43:27.223389",
+  "name": "Scrotoplasty",
+  "surgery_name": "Scrotoplasty"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:43:35.030404",
+  "name": "Breast Implants",
+  "surgery_name": "Breast Implants"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:43:44.045511",
+  "name": "Orchiectomy",
+  "surgery_name": "Orchiectomy"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:43:52.372244",
+  "name": "Vulvoplasty",
+  "surgery_name": "Vulvoplasty"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:44:00.627347",
+  "name": "Vaginoplasty",
+  "surgery_name": "Vaginoplasty"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:44:08.266570",
+  "name": "Tracheal Shave",
+  "surgery_name": "Tracheal Shave"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:44:17.353676",
+  "name": "Facial Surgery",
+  "surgery_name": "Facial Surgery"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Surgery",
+  "modified": "2024-02-08 22:44:25.664588",
+  "name": "Body Contouring",
+  "surgery_name": "Body Contouring"
+ }
+]

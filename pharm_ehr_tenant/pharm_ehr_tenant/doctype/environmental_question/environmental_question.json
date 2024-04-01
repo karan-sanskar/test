@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:QUES-.##",
+ "creation": "2024-02-09 03:22:09.508241",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "question",
+  "question_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Long Text",
+   "max_height": "50px"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "QUES-.##\nQUES-.###"
+  },
+  {
+   "fieldname": "question_type",
+   "fieldtype": "Select",
+   "label": "Question Type",
+   "options": "Yes/No\nDescriptive\nMultiple Choice"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-11 19:36:49.289550",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Environmental Question",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "question",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

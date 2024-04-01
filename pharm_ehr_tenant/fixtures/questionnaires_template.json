@@ -1,0 +1,123 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Questionnaires Template",
+  "is_active": 0,
+  "is_default": 0,
+  "modified": "2024-03-18 09:18:14.308792",
+  "name": "Immunocompromised Question",
+  "questions_description": [
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Is the patient immunocompromised?</p><p>Immunocompromised people include those who have:</p><ol><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Been receiving active cancer treatment for tumors or cancers of the blood</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received an organ transplant and are taking medicine to suppress the immune system</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received a stem cell transplant within the last 2 years or are taking medicine to suppress the immune system</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Received CAR-T-cell therapy, hematocrit therapy (HCT)</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Moderate or severe primary immunodeficiency (such as DiGeorge syndrome, Wiskott-Aldrich syndrome)</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Advanced or untreated HIV infection</li><li data-list=\"bullet\"><span class=\"ql-ui\" contenteditable=\"false\"></span>Active treatment with high-dose corticosteroids or other drugs that may suppress your immune response</li></ol></div>",
+    "parent": "Immunocompromised Question",
+    "parentfield": "questions_description",
+    "parenttype": "Questionnaires Template",
+    "question_no": "Immunization Service-031"
+   }
+  ],
+  "service_type": "Immunization Service",
+  "vaccine_type": [
+   {
+    "parent": "Immunocompromised Question",
+    "parentfield": "vaccine_type",
+    "parenttype": "Questionnaires Template",
+    "vaccine_type": "Covid - 19"
+   },
+   {
+    "parent": "Immunocompromised Question",
+    "parentfield": "vaccine_type",
+    "parenttype": "Questionnaires Template",
+    "vaccine_type": "COVID VACCINATION"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Questionnaires Template",
+  "is_active": 0,
+  "is_default": 0,
+  "modified": "2024-02-21 21:34:43.656656",
+  "name": "QUES-TEMPL-013",
+  "questions_description": [],
+  "service_type": "Immunization Service",
+  "vaccine_type": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Questionnaires Template",
+  "is_active": 1,
+  "is_default": 0,
+  "modified": "2024-03-07 03:52:33.101649",
+  "name": "QUES-TEMPL-002",
+  "questions_description": [
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Are you sick today? ¿Está enfermo hoy?</p></div>",
+    "parent": "QUES-TEMPL-002",
+    "parentfield": "questions_description",
+    "parenttype": "Questionnaires Template",
+    "question_no": "Immunization Service-005"
+   }
+  ],
+  "service_type": "Immunization Service",
+  "vaccine_type": [
+   {
+    "parent": "QUES-TEMPL-002",
+    "parentfield": "vaccine_type",
+    "parenttype": "Questionnaires Template",
+    "vaccine_type": "RSV Vaccine"
+   },
+   {
+    "parent": "QUES-TEMPL-002",
+    "parentfield": "vaccine_type",
+    "parenttype": "Questionnaires Template",
+    "vaccine_type": "Flu Shot"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Questionnaires Template",
+  "is_active": 1,
+  "is_default": 0,
+  "modified": "2024-03-04 23:02:32.301318",
+  "name": "QUES-TEMPL-009",
+  "questions_description": [
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Are you sick today? ¿Está enfermo hoy?</p></div>",
+    "parent": "QUES-TEMPL-009",
+    "parentfield": "questions_description",
+    "parenttype": "Questionnaires Template",
+    "question_no": "Immunization Service-005"
+   },
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Do you have allergies to medications, food, a vaccine component, or latex? ¿Es alérgico a algún medicamento, alimento, a</p><p>algún componente de las vacunas o al látex?</p></div>",
+    "parent": "QUES-TEMPL-009",
+    "parentfield": "questions_description",
+    "parenttype": "Questionnaires Template",
+    "question_no": "Immunization Service-006"
+   },
+   {
+    "description": "<div class=\"ql-editor read-mode\"><p>Have you ever received a COVID-19 vaccine? ¿Ha recibido alguna vez una vacuna contra el COVID-19?</p><p>a. Date of Last Dose. Fecha de la última dosis: _____________</p></div>",
+    "parent": "QUES-TEMPL-009",
+    "parentfield": "questions_description",
+    "parenttype": "Questionnaires Template",
+    "question_no": "Immunization Service-008"
+   }
+  ],
+  "service_type": "Immunization Service",
+  "vaccine_type": [
+   {
+    "parent": "QUES-TEMPL-009",
+    "parentfield": "vaccine_type",
+    "parenttype": "Questionnaires Template",
+    "vaccine_type": "Covid - 19"
+   },
+   {
+    "parent": "QUES-TEMPL-009",
+    "parentfield": "vaccine_type",
+    "parenttype": "Questionnaires Template",
+    "vaccine_type": "Flu Shot"
+   }
+  ]
+ }
+]

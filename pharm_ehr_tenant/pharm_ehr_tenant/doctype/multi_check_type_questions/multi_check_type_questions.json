@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-09 01:48:43.847690",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question_no",
+  "question",
+  "yes",
+  "no",
+  "na"
+ ],
+ "fields": [
+  {
+   "columns": 7,
+   "fetch_from": "question_no.question",
+   "fieldname": "question",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Yes"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "No"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "na",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "N/A"
+  },
+  {
+   "fieldname": "question_no",
+   "fieldtype": "Link",
+   "label": "Question No",
+   "options": "Question Doctype"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-09 01:56:57.783433",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Multi Check Type Questions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

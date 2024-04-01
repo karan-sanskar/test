@@ -1,0 +1,916 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-24 04:36:30.972298",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_info_tab",
+  "section_break_lbiy",
+  "amended_from",
+  "naming_series",
+  "patient_name",
+  "dob",
+  "phone",
+  "cmr_recipient",
+  "caregiver_name",
+  "caregiver_relationship",
+  "address",
+  "reason_for_service",
+  "column_break_o9nk",
+  "gender",
+  "patient_address",
+  "address_html",
+  "pcp_name",
+  "pcp_phone_number",
+  "cmr_completed",
+  "patient_take_away_delivered",
+  "cmr_claim_submited",
+  "justify_ineligibility",
+  "ineligible_date",
+  "eligibility_criteria_tab",
+  "patient_eligibility_template",
+  "eligibility_criteria_html",
+  "eligibility",
+  "medication_profile_tab",
+  "section_break_vybm",
+  "medication_profile",
+  "health_conditions",
+  "allergies_side_effects",
+  "medications",
+  "social_history_section",
+  "do_you_currently_use_or_have_you_ever_tobacco_profucts",
+  "current_cigarette_smoker",
+  "when_did_you_first_start_smoking",
+  "how_many_cigarettes_do_you_smoke_per_day",
+  "are_you_interested_in_quiting_1",
+  "former_cigarette_smoker",
+  "when_did_you_quit_smoking",
+  "on_average_how_many_cigarettes_did_you_smoke_per_day",
+  "how_many_years_did_you_smoke_for",
+  "other_tobacco_user",
+  "other_description",
+  "how_many_times_in_the_past_year",
+  "are_you_interested_in_quiting_2",
+  "past_year_have_you_had_4_or_more_alcoholic_drinks_iady",
+  "recreational_drug_usage",
+  "recreational_drug_usage_html",
+  "use_opioids_and_have_access_to_nacran",
+  "are_you_interesting_in_quiting",
+  "family_health_history_section",
+  "relative_medical_conditions_html",
+  "relative_medical_conditions",
+  "surgical_history_section",
+  "headding",
+  "surgical_histories_html",
+  "surgical_histories",
+  "purpose_of_body_shapping",
+  "hospitalization_history",
+  "have_you_hospitalized_overnight",
+  "what_for_and_when",
+  "environmental_factors_employment_and_living_condition_section",
+  "employment_housing_transportation",
+  "scheduling_tab",
+  "service_delivery_section",
+  "delivery_method",
+  "authentication_code",
+  "mode_of_delivering_mtm",
+  "notes",
+  "aggree",
+  "appointment_details_section",
+  "appointment_html",
+  "section_break_wenx",
+  "pharmacist",
+  "column_break_ojas",
+  "pharmacy",
+  "medication_action_plan_map_tab",
+  "vital_signs_section",
+  "signs_date",
+  "pulse",
+  "height",
+  "weight",
+  "bmi",
+  "column_break_qguu",
+  "signs_time",
+  "bp_systolic",
+  "bp_diastolic",
+  "bp",
+  "bmi_note",
+  "map_section",
+  "medication_action_plan",
+  "my_follow_up_plan",
+  "questions",
+  "patient_summary_tab",
+  "section_break_yqyu",
+  "column_break_cglc",
+  "date_cmr_was_completed",
+  "ltc",
+  "language",
+  "patient_summary_date",
+  "pharmacists_availability_for_questions",
+  "verify_patients_name_and_address",
+  "additional_notes_summary",
+  "section_break_zbdq",
+  "agreement",
+  "agreement_html",
+  "service_details_section",
+  "service_start_time",
+  "total_duration",
+  "payment_type",
+  "billing_status",
+  "column_break_vngf",
+  "service_end_time",
+  "billing_code",
+  "section_break_pksx",
+  "workflow_progress",
+  "reference_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_lbiy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CMR Service",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "patient_name.dob",
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fetch_from": "patient_name.mobile",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Mobile  (Primary Phone)"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:(doc.workflow_state == \"Service Completed\");",
+   "fieldname": "cmr_completed",
+   "fieldtype": "Date",
+   "label": "CMR Completed"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:(doc.workflow_state == \"Service Completed\");",
+   "fieldname": "patient_take_away_delivered",
+   "fieldtype": "Date",
+   "label": "Patient take away delivered"
+  },
+  {
+   "fieldname": "cmr_claim_submited",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "CMR claim submited on connect Platform"
+  },
+  {
+   "fieldname": "section_break_vybm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "medication_profile",
+   "fieldtype": "Heading",
+   "label": "Medication Profile"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "allergies_side_effects",
+   "fieldtype": "Table",
+   "label": "Drug Allergies + Side Effects",
+   "options": "Drug Allergies Side Effects"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "medications",
+   "fieldtype": "Table",
+   "label": "Medications",
+   "options": "CMR Medications"
+  },
+  {
+   "fieldname": "medication_action_plan",
+   "fieldtype": "Table",
+   "label": "Medication Action Plan",
+   "options": "Medication Action Plan"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal && ![\"Not Started\",\"Ineligible\"].includes(doc.workflow_state)",
+   "fieldname": "medication_profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "Patient History"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal && ![\"Not Started\",\"Ineligible\", \"Qualified\", \"In Progress\", ].includes(doc.workflow_state)",
+   "fieldname": "medication_action_plan_map_tab",
+   "fieldtype": "Tab Break",
+   "label": "Medication Action Plan (MAP)"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state == \"Ineligible\")",
+   "fieldname": "justify_ineligibility",
+   "fieldtype": "Text",
+   "label": "Justify Ineligibility",
+   "mandatory_depends_on": "eval:(doc.workflow_state == \"Ineligible\")",
+   "max_height": "50px"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state == \"Ineligible\")",
+   "fieldname": "ineligible_date",
+   "fieldtype": "Date",
+   "label": "Ineligible Date"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "max_height": "50px",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "no_copy": 1,
+   "options": "CMR-.YY.-.#",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient_eligibility_template",
+   "fieldtype": "Select",
+   "label": "Service Provider Form"
+  },
+  {
+   "fieldname": "patient_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Patient Info"
+  },
+  {
+   "fieldname": "cmr_recipient",
+   "fieldtype": "Select",
+   "label": "CMR Recipient?",
+   "options": "Patient\nCaregiver"
+  },
+  {
+   "depends_on": "eval:doc.cmr_recipient == \"Caregiver\"",
+   "fieldname": "caregiver_name",
+   "fieldtype": "Text",
+   "label": "Caregiver Name",
+   "max_height": "50px"
+  },
+  {
+   "depends_on": "eval:doc.cmr_recipient == \"Caregiver\"",
+   "fieldname": "caregiver_relationship",
+   "fieldtype": "Text",
+   "label": "Caregiver Relationship",
+   "max_height": "25px"
+  },
+  {
+   "fieldname": "reason_for_service",
+   "fieldtype": "Small Text",
+   "label": "Reason for Service",
+   "max_height": "50px"
+  },
+  {
+   "fieldname": "delivery_method",
+   "fieldtype": "Select",
+   "label": "Delivery Method",
+   "options": "Face to Face\nTelehealth"
+  },
+  {
+   "depends_on": "eval:(doc.delivery_method == \"Phone Call\");",
+   "fieldname": "authentication_code",
+   "fieldtype": "Text",
+   "label": "Authentication Code",
+   "mandatory_depends_on": "eval:(doc.delivery_method == \"Phone Call\");",
+   "max_height": "25px"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "health_conditions",
+   "fieldtype": "Table",
+   "label": "Health Conditions",
+   "options": "Common Conditions"
+  },
+  {
+   "fetch_from": "patient_name.sex",
+   "fieldname": "gender",
+   "fieldtype": "Text",
+   "label": "Gender",
+   "max_height": "25px",
+   "read_only": 1
+  },
+  {
+   "fetch_from": ".alcohol_past_use",
+   "fieldname": "patient_address",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Patient Address",
+   "options": "Address"
+  },
+  {
+   "fetch_from": ".alcohol_past_use",
+   "fieldname": "address_html",
+   "fieldtype": "Text",
+   "label": "Address",
+   "max_height": "80px",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient_name.custom_pcp_name",
+   "fetch_if_empty": 1,
+   "fieldname": "pcp_name",
+   "fieldtype": "Text",
+   "label": "PCP Name",
+   "max_height": "25px"
+  },
+  {
+   "fetch_from": "patient_name.custom_pcp_phone",
+   "fieldname": "pcp_phone_number",
+   "fieldtype": "Text",
+   "label": "PCP Phone Number",
+   "max_height": "25px"
+  },
+  {
+   "default": "{\n    \"Not Started\":0,\n    \"Ineligible\": 6,\n    \"Qualified\": 1,\n    \"In Progress\":2,\n    \"Scheduled\": 3,\n    \"Ready for Review\": 4,\n    \"Ready for Service\":5,\n    \"Service Completed\": 6\n}",
+   "fetch_from": "patient_address.",
+   "fieldname": "workflow_progress",
+   "fieldtype": "Code",
+   "label": "Workflow Progress"
+  },
+  {
+   "depends_on": "eval: [\"Ready for Service\", \"Service Completed\"].includes(doc.workflow_state)",
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "service_start_time",
+   "fieldtype": "Datetime",
+   "label": "Service start time"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "total_duration",
+   "fieldtype": "Float",
+   "label": "Total Service Duration(In minutes)",
+   "precision": "1"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "\nInsurance\nCash/Credit Card"
+  },
+  {
+   "fieldname": "column_break_vngf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "service_end_time",
+   "fieldtype": "Datetime",
+   "label": "Service end time"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval: doc.payment_type == \"Insurance\"",
+   "fieldname": "billing_code",
+   "fieldtype": "Table",
+   "label": "Billing Code",
+   "options": "Billing Code"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "vital_signs_section",
+   "fieldtype": "Section Break",
+   "label": "Vital Signs"
+  },
+  {
+   "fieldname": "bmi",
+   "fieldtype": "Float",
+   "label": "BMI",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_qguu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.delivery_method == \"Telehealth\"",
+   "fieldname": "mode_of_delivering_mtm",
+   "fieldtype": "Check",
+   "label": "Do you have a verbal consent from the patient for the use of telehealth as an acceptable mode of delivering MTM?"
+  },
+  {
+   "depends_on": "eval: doc.mode_of_delivering_mtm",
+   "fieldname": "notes",
+   "fieldtype": "HTML"
+  },
+  {
+   "depends_on": "eval: doc.mode_of_delivering_mtm",
+   "fieldname": "aggree",
+   "fieldtype": "Select",
+   "label": "I agree to comply with the above requirements.",
+   "options": "\nYes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "social_history_section",
+   "fieldtype": "Section Break",
+   "label": "Social History"
+  },
+  {
+   "fieldname": "do_you_currently_use_or_have_you_ever_tobacco_profucts",
+   "fieldtype": "Select",
+   "label": "1. Do you currently use or have you ever used tobacco products?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval: doc.current_cigarette_smoker",
+   "fieldname": "when_did_you_first_start_smoking",
+   "fieldtype": "Link",
+   "label": "When did you first start smoking?",
+   "options": "Year"
+  },
+  {
+   "depends_on": "eval: doc.current_cigarette_smoker && doc.when_did_you_first_start_smoking",
+   "fieldname": "how_many_cigarettes_do_you_smoke_per_day",
+   "fieldtype": "Text",
+   "label": "How many cigarettes do you smoke per day?",
+   "max_height": "25px"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.do_you_currently_use_or_have_you_ever_tobacco_profucts==\"Yes\"",
+   "fieldname": "former_cigarette_smoker",
+   "fieldtype": "Check",
+   "label": "Former cigarette smoker"
+  },
+  {
+   "depends_on": "eval: doc.former_cigarette_smoker",
+   "fieldname": "when_did_you_quit_smoking",
+   "fieldtype": "Link",
+   "label": "When did you quit smoking?",
+   "options": "Year"
+  },
+  {
+   "depends_on": "eval: doc.when_did_you_quit_smoking",
+   "fieldname": "on_average_how_many_cigarettes_did_you_smoke_per_day",
+   "fieldtype": "Int",
+   "label": "On average how many cigarettes did you smoke per day(Cigarette)?"
+  },
+  {
+   "depends_on": "eval: doc.on_average_how_many_cigarettes_did_you_smoke_per_day",
+   "fieldname": "how_many_years_did_you_smoke_for",
+   "fieldtype": "Float",
+   "label": "How many years did you smoke for(Year)?",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.do_you_currently_use_or_have_you_ever_tobacco_profucts==\"Yes\"",
+   "fieldname": "other_tobacco_user",
+   "fieldtype": "Check",
+   "label": "Other tobacco user (Circle:cigars, hookah, chew, vape). How often and for how many years?"
+  },
+  {
+   "depends_on": "eval: doc.other_tobacco_user",
+   "fieldname": "other_description",
+   "fieldtype": "Long Text",
+   "max_height": "50px",
+   "width": "10px"
+  },
+  {
+   "fieldname": "how_many_times_in_the_past_year",
+   "fieldtype": "Text",
+   "label": "2. How many times in the past year have you had 4 or more alcoholic drinks in 1 day?",
+   "max_height": "25px"
+  },
+  {
+   "depends_on": "eval: doc.how_many_cigarettes_do_you_smoke_per_day",
+   "fieldname": "are_you_interested_in_quiting_1",
+   "fieldtype": "Select",
+   "label": "Are you interested in quiting?",
+   "options": "No\nThinking about quitting\nReady to quit"
+  },
+  {
+   "depends_on": "eval: doc.how_many_times_in_the_past_year",
+   "fieldname": "are_you_interested_in_quiting_2",
+   "fieldtype": "Select",
+   "label": "Are you interested in quiting?",
+   "options": "No\nThinking about quitting\nReady to quit"
+  },
+  {
+   "fieldname": "past_year_have_you_had_4_or_more_alcoholic_drinks_iady",
+   "fieldtype": "Int",
+   "label": "3. How many times in the past year have you used recreational or prescription drug for non-medical reasons?"
+  },
+  {
+   "fieldname": "purpose_of_body_shapping",
+   "fieldtype": "Select",
+   "label": "Have you ever injected or pumped silicone, oils, or other substances for the purpose of body shaping?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "have_you_hospitalized_overnight",
+   "fieldtype": "Select",
+   "label": "Other than for surgery or childbirth, have you ever been hospitalized overnight for a medical or mental health issue?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval: doc.have_you_hospitalized_overnight == \"Yes\"",
+   "fieldname": "what_for_and_when",
+   "fieldtype": "Long Text",
+   "label": "What for and when?",
+   "max_height": "50px"
+  },
+  {
+   "description": "Adults' pulse rate is anywhere between 50 and 80 beats per minute.",
+   "fieldname": "pulse",
+   "fieldtype": "Text",
+   "label": "Heart Rate / Pulse",
+   "max_height": "25px"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Select",
+   "label": "Height (Feet & Inches)",
+   "options": "n/a\n1'1\"\n1'2\"\n1'3\"\n1'4\"\n1'5\"\n1'6\"\n1'7\"\n1'8\"\n1'9\"\n1'10\"\n1'11\"\n2'1\"\n2'2\"\n2'3\"\n2'4\"\n2'5\"\n2'6\"\n2'7\"\n2'8\"\n2'9\"\n2'10\"\n2'11\"\n3'1\"\n3'2\"\n3'3\"\n3'4\"\n3'5\"\n3'6\"\n3'7\"\n3'8\"\n3'9\"\n3'10\"\n3'11\"\n4'1\"\n4'2\"\n4'3\"\n4'4\"\n4'5\"\n4'6\"\n4'7\"\n4'8\"\n4'9\"\n4'10\"\n4'11\"\n5'1\"\n5'2\"\n5'3\"\n5'4\"\n5'5\"\n5'6\"\n5'7\"\n5'8\"\n5'9\"\n5'10\"\n5'11\"\n6'1\"\n6'2\"\n6'3\"\n6'4\"\n6'5\"\n6'6\"\n6'7\"\n6'8\"\n6'9\"\n6'10\"\n6'11\"\n7'1\"\n7'2\"\n7'3\"\n7'4\"\n7'5\"\n7'6\"\n7'7\"\n7'8\"\n7'9\"\n7'10\"\n7'11\"\n8'1\"\n8'2\"\n8'3\"\n8'4\"\n8'5\"\n8'6\"\n8'7\"\n8'8\"\n8'9\"\n8'10\"\n8'11\"\n9'1\"\n9'2\"\n9'3\"\n9'4\"\n9'5\"\n9'6\"\n9'7\"\n9'8\"\n9'9\"\n9'10\"\n9'11\""
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight (In lbs.)",
+   "precision": "1"
+  },
+  {
+   "fieldname": "bp_systolic",
+   "fieldtype": "Text",
+   "label": "Blood Pressure (systolic)",
+   "max_height": "25px"
+  },
+  {
+   "fieldname": "bp_diastolic",
+   "fieldtype": "Text",
+   "label": "Blood Pressure (diastolic)",
+   "max_height": "25px"
+  },
+  {
+   "fieldname": "bp",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Blood Pressure",
+   "max_height": "25px"
+  },
+  {
+   "default": "Today",
+   "fieldname": "signs_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "signs_time",
+   "fieldtype": "Time",
+   "label": "Time (hh:mm)",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.past_year_have_you_had_4_or_more_alcoholic_drinks_iady",
+   "fieldname": "recreational_drug_usage",
+   "fieldtype": "Table",
+   "label": "What have you used and when did you last use?",
+   "options": "Recreational Drug Usage"
+  },
+  {
+   "depends_on": "eval: doc.use_opioids_and_have_access_to_nacran == \"Yes\"",
+   "fieldname": "are_you_interesting_in_quiting",
+   "fieldtype": "Select",
+   "label": "Are you interesting in quiting?",
+   "options": "No\nThinking About Quitting\nReady to Quit"
+  },
+  {
+   "fieldname": "use_opioids_and_have_access_to_nacran",
+   "fieldtype": "Select",
+   "label": "4. If you use opioids, do you have access to Narcan (Naloxone)?",
+   "options": "Not Applicable\nNo\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "family_health_history_section",
+   "fieldtype": "Section Break",
+   "label": "Family Health History"
+  },
+  {
+   "bold": 1,
+   "fieldname": "relative_medical_conditions",
+   "fieldtype": "Table",
+   "label": "Have any of your blood relatives had any of the following?<br>If so, please indicate which of your blood relatives have the condition.",
+   "options": "Relative Medical Condition"
+  },
+  {
+   "fieldname": "surgical_histories",
+   "fieldtype": "Table",
+   "label": "<b>What surgeries have you had in the past, and in what year?</b>",
+   "options": "Surgical History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "surgical_history_section",
+   "fieldtype": "Section Break",
+   "label": "Past medical, surgical and hospitalization history"
+  },
+  {
+   "fieldname": "headding",
+   "fieldtype": "Heading",
+   "label": "Surgical History"
+  },
+  {
+   "fieldname": "hospitalization_history",
+   "fieldtype": "Heading",
+   "label": "Hospitalization History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "environmental_factors_employment_and_living_condition_section",
+   "fieldtype": "Section Break",
+   "label": "Environmental Factors Employment and Living Condition"
+  },
+  {
+   "fieldname": "employment_housing_transportation",
+   "fieldtype": "Table",
+   "label": "Employment, Housing, &Transportation",
+   "options": "Environmental Factors Questionnaires"
+  },
+  {
+   "fieldname": "recreational_drug_usage_html",
+   "fieldtype": "HTML",
+   "label": "Recreational Drug Usage Html"
+  },
+  {
+   "fieldname": "surgical_histories_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "relative_medical_conditions_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "map_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal",
+   "fieldname": "eligibility_criteria_tab",
+   "fieldtype": "Tab Break",
+   "label": "Eligibility Criteria"
+  },
+  {
+   "fieldname": "eligibility_criteria_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "eligibility",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Eligibility",
+   "options": "Eligibility Check for CMR"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.do_you_currently_use_or_have_you_ever_tobacco_profucts==\"Yes\"",
+   "fieldname": "current_cigarette_smoker",
+   "fieldtype": "Check",
+   "label": "Current cigarette smoker"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pharmacist",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Pharmacist",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "pharmacist.custom_pharmacy",
+   "fieldname": "pharmacy",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Pharmacy",
+   "options": "Healthcare Service Unit"
+  },
+  {
+   "fieldname": "column_break_o9nk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "date_cmr_was_completed",
+   "fieldtype": "Date",
+   "label": "Date CMR was completed",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "ltc",
+   "fieldtype": "Select",
+   "label": "Was the patient in a Long Term Care (LTC) facility when the CMR was completed?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "pharmacists_availability_for_questions",
+   "fieldtype": "Text",
+   "label": "Pharmacists Availability for Questions?",
+   "max_height": "30px",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "verify_patients_name_and_address",
+   "fieldtype": "Small Text",
+   "label": "Verify patient's name and address",
+   "max_height": "60px",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "English",
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language template for the patient summary",
+   "options": "English\nSpanish"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "additional_notes_summary",
+   "fieldtype": "Small Text",
+   "label": "Additional Notes Summary",
+   "max_height": "60px",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "patient_summary_date",
+   "fieldtype": "Date",
+   "label": "Patient Summary Date"
+  },
+  {
+   "fieldname": "section_break_zbdq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "agreement",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Agreement"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval: doc.workflow_state == \"Ready for Service\"",
+   "fieldname": "agreement_html",
+   "fieldtype": "HTML",
+   "label": "Agreement_html"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "column_break_cglc",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: !doc.__islocal && ![\"Not Started\",\"Ineligible\", \"Qualified\"].includes(doc.workflow_state)",
+   "fieldname": "scheduling_tab",
+   "fieldtype": "Tab Break",
+   "label": "Scheduling"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "appointment_html",
+   "fieldtype": "HTML",
+   "label": "Appointment Html"
+  },
+  {
+   "fieldname": "appointment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Appointment Details"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal && ![\"Not Started\",\"Ineligible\", \"Qualified\", \"In Progress\"].includes(doc.workflow_state)",
+   "fieldname": "service_delivery_section",
+   "fieldtype": "Section Break",
+   "label": "Service Delivery"
+  },
+  {
+   "fieldname": "column_break_ojas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal && ![\"Not Started\",\"Ineligible\", \"Qualified\", \"In Progress\",\"Scheduled\", \"Ready for review\" ].includes(doc.workflow_state)",
+   "fieldname": "patient_summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Patient Summary"
+  },
+  {
+   "fieldname": "section_break_pksx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_yqyu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_wenx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bmi_note",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "bmi_note",
+   "max_height": "50px"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "billing_status",
+   "fieldtype": "Select",
+   "label": "Billing Status",
+   "options": "Not Ready for Billing\nReady to Claim\nSubmitted\nRemitted\nRejected\nResubmitted"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "my_follow_up_plan",
+   "fieldtype": "Long Text",
+   "label": "My follow-up plan (add notes about next steps):"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "questions",
+   "fieldtype": "Long Text",
+   "label": "Questions I want to ask (include topics about medications or therapy):"
+  },
+  {
+   "fieldname": "reference_document",
+   "fieldtype": "Link",
+   "label": "Reference Document",
+   "options": "CMR Service"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-04-01 19:21:22.359894",
+ "modified_by": "Administrator",
+ "module": "Service Type",
+ "name": "CMR Service",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

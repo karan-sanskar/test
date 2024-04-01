@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-07 09:38:06.786015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vaccine",
+  "vis_given",
+  "mfg",
+  "exp",
+  "arm",
+  "column_break_fcbb",
+  "vis_exp",
+  "vaccine_given",
+  "lot",
+  "site",
+  "rph"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "vaccine",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vaccine",
+   "options": "Medication"
+  },
+  {
+   "fieldname": "vis_given",
+   "fieldtype": "Date",
+   "label": "VIS Given"
+  },
+  {
+   "fieldname": "mfg",
+   "fieldtype": "Date",
+   "label": "Mfg"
+  },
+  {
+   "fieldname": "exp",
+   "fieldtype": "Date",
+   "label": "Exp"
+  },
+  {
+   "columns": 2,
+   "fieldname": "arm",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Arm",
+   "options": "LA\nRA"
+  },
+  {
+   "fieldname": "column_break_fcbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "vis_exp",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "VIS exp"
+  },
+  {
+   "columns": 2,
+   "fieldname": "vaccine_given",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Vaccine Given"
+  },
+  {
+   "fieldname": "lot",
+   "fieldtype": "Data",
+   "label": "Lot#"
+  },
+  {
+   "columns": 2,
+   "fieldname": "site",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Site",
+   "options": "IM\nSQ"
+  },
+  {
+   "fieldname": "rph",
+   "fieldtype": "Data",
+   "label": "RPH"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-14 09:23:08.272288",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Vaccine Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

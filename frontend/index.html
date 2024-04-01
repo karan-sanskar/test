@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webform</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .footer a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: #837a7a;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .footer a {
+        display: block;
+        margin: 5px 0; 
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div id="app"></div>
+    <div id="modals"></div>
+    <div id="popovers"></div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <a href="https://qa-agency.rxbb.io/hipaa-privacy-policy" target="_blank" style="color:#837a7a;">HIPAA Privacy
+        Policy</a>
+      <a href="https://qa-agency.rxbb.io/notice-of-privacy-practices" target="_blank" style="color:#837a7a;">Notice of
+        Privacy Practices</a>
+      <a href="https://qa-agency.rxbb.io/terms-of-use" target="_blank" style="color:#837a7a;">Terms of Use</a>
+    </div>
+    <br>
+    <div class="copyright">
+      <span>@Copyright 2024 RxBB.io, LLC. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    window.csrf_token = '{{ frappe.session.csrf_token }}'
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

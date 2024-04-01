@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-01-30 03:17:37.831483",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_type",
+  "make_this_default",
+  "patient_criteria_section",
+  "criteria",
+  "code_etoe"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "label": "Service Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "patient_criteria_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Criteria"
+  },
+  {
+   "fieldname": "criteria",
+   "fieldtype": "Table",
+   "options": "Patient Eligibility Points"
+  },
+  {
+   "description": "- Criteria can be mentioned as <code> criteria_# </code>where <b>'#'</b> is the option number mentioned.\n<br>\n- Conditional statements can be controlled by <b>\"AND\"</b> and <b>\"OR\"</b><br>\nEXAMPLE:<code> ((criteria_1  AND criteria_2 ) OR (criteria_3 \n AND criteria_4))</code>",
+   "fieldname": "code_etoe",
+   "fieldtype": "Code",
+   "in_list_view": 1,
+   "label": "Conditions for critera",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "make_this_default",
+   "fieldtype": "Check",
+   "label": "Make this Default"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-13 03:50:42.128907",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Patient Eligibility Template",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "service_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

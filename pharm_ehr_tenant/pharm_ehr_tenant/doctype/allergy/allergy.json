@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:allergy",
+ "creation": "2024-01-31 10:22:34.006690",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "allergy",
+  "reasoncause",
+  "column_break_chuz",
+  "symptoms"
+ ],
+ "fields": [
+  {
+   "fieldname": "allergy",
+   "fieldtype": "Data",
+   "label": "Allergy",
+   "unique": 1
+  },
+  {
+   "fieldname": "reasoncause",
+   "fieldtype": "Small Text",
+   "label": "Reason/Cause"
+  },
+  {
+   "fieldname": "column_break_chuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "symptoms",
+   "fieldtype": "Small Text",
+   "label": "Symptoms"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-31 10:25:14.990876",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Allergy",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

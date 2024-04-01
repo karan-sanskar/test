@@ -1,0 +1,156 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Marijuana",
+  "modified": "2024-02-08 18:17:46.555520",
+  "name": "Marijuana"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Rx Opiolids(Fentany, Codeine, Oxycontin, Vicodin, percocet, Dilaudid, Morphine, etc)",
+  "modified": "2024-02-08 18:18:33.223079",
+  "name": "Rx Opiolids(Fentany, Codeine, Oxycontin, Vicodin, percocet, Dilaudid, Morphine, etc)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Heroin",
+  "modified": "2024-02-08 18:18:47.942377",
+  "name": "Heroin"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Cocaine/Crack",
+  "modified": "2024-02-08 18:19:02.381875",
+  "name": "Cocaine/Crack"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Cathinones(Bath Salts)",
+  "modified": "2024-02-08 18:19:17.906466",
+  "name": "Cathinones(Bath Salts)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "MDMA(Ecstasy)",
+  "modified": "2024-02-08 18:19:36.056857",
+  "name": "MDMA(Ecstasy)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Phencyclidine (PCP)",
+  "modified": "2024-02-08 18:19:51.079594",
+  "name": "Phencyclidine (PCP)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Anabolic Steroids or human Growth Hormone",
+  "modified": "2024-02-08 18:20:02.814980",
+  "name": "Anabolic Steroids or human Growth Hormone"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Benzodiazepines (Xanax, Klonopin, Ativan, etc)",
+  "modified": "2024-02-08 18:20:18.823213",
+  "name": "Benzodiazepines (Xanax, Klonopin, Ativan, etc)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Nitrous Oxide (Whippits)",
+  "modified": "2024-02-08 18:20:32.307719",
+  "name": "Nitrous Oxide (Whippits)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Alkyl Nitrites(Poppers)",
+  "modified": "2024-02-08 18:20:50.184843",
+  "name": "Alkyl Nitrites(Poppers)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Methamphetamines(Crystal Meth)",
+  "modified": "2024-02-08 18:21:06.381692",
+  "name": "Methamphetamines(Crystal Meth)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Rx Stimulants (Ritalin, Adderall, Dexedrine, Concentra, etc)",
+  "modified": "2024-02-08 18:21:26.715006",
+  "name": "Rx Stimulants (Ritalin, Adderall, Dexedrine, Concentra, etc)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Ketamine (Special K)",
+  "modified": "2024-02-08 18:21:39.890739",
+  "name": "Ketamine (Special K)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Barbiturates (Phenobarbitol)",
+  "modified": "2024-02-08 18:21:50.883576",
+  "name": "Barbiturates (Phenobarbitol)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Sleeping Aids (Ambien, Lunesta, etc)",
+  "modified": "2024-02-08 18:22:01.385272",
+  "name": "Sleeping Aids (Ambien, Lunesta, etc)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Rohypnol (GHB)",
+  "modified": "2024-02-08 18:22:12.536107",
+  "name": "Rohypnol (GHB)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "LSD (Acid)",
+  "modified": "2024-02-08 18:22:22.133009",
+  "name": "LSD (Acid)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Mushrooms",
+  "modified": "2024-02-08 18:22:33.300369",
+  "name": "Mushrooms"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "DMT (Ayahuasca)",
+  "modified": "2024-02-08 18:22:47.187249",
+  "name": "DMT (Ayahuasca)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Peyote (Mescaline)",
+  "modified": "2024-02-08 18:22:56.892648",
+  "name": "Peyote (Mescaline)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Recreational Drug",
+  "drug_name": "Not Listed",
+  "modified": "2024-02-08 18:23:46.133069",
+  "name": "Not Listed"
+ }
+]

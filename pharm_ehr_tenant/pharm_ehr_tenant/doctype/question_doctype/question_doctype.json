@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{form_type}-{###}",
+ "creation": "2024-02-08 22:26:57.652228",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "form_type",
+  "question",
+  "input_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "form_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Form Type",
+   "options": "CMR Service\nImmunization Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Text Editor",
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "fieldname": "input_type",
+   "fieldtype": "Select",
+   "label": "Input Type",
+   "options": "\nCheckbox\nYes/No/NA\nDescriptive\nMulti Select\nMulti Check",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-09 01:40:45.660435",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Question Doctype",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "input_type, question",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

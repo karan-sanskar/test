@@ -1,0 +1,10 @@
+[
+ {
+  "custom_service_type": "Immunization Service",
+  "docstatus": 0,
+  "doctype": "Medication Class",
+  "medication_class": "Medication",
+  "modified": "2024-03-29 02:20:14.560536",
+  "name": "Medication"
+ }
+]

@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-09 01:23:07.385339",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question_tag",
+  "question",
+  "yes_no",
+  "options",
+  "answer",
+  "descriptive_answer"
+ ],
+ "fields": [
+  {
+   "fieldname": "yes_no",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Yes/No",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "descriptive_answer",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Descriptive Answer",
+   "max_height": "50px"
+  },
+  {
+   "fieldname": "question_tag",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Question Tag",
+   "max_height": "60px",
+   "options": "Environmental Question"
+  },
+  {
+   "fetch_from": "question_tag.question",
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Question",
+   "read_only": 1
+  },
+  {
+   "fetch_from": ".question",
+   "fieldname": "options",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Options",
+   "options": "Environmental Answer"
+  },
+  {
+   "fetch_from": "options.answer",
+   "fieldname": "answer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Answer",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-13 06:52:32.574011",
+ "modified_by": "Administrator",
+ "module": "Pharm Ehr Tenant",
+ "name": "Environmental Factors Questionnaires",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

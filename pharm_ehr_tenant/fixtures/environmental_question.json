@@ -1,0 +1,137 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:32:05.308901",
+  "name": "QUES-01",
+  "naming_series": "QUES-.##",
+  "question": "Are you working or in school?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:32:46.730291",
+  "name": "QUES-02",
+  "naming_series": "QUES-.##",
+  "question": "What is your current living situation?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:33:16.473571",
+  "name": "QUES-03",
+  "naming_series": "QUES-.##",
+  "question": "Who do you live with?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:33:51.536714",
+  "name": "QUES-04",
+  "naming_series": "QUES-.##",
+  "question": "Do you feel safe in your living situation?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:34:46.709093",
+  "name": "QUES-05",
+  "naming_series": "QUES-.##",
+  "question": "If you are over 50 and/or disabled, do you sometimes fall? Is it hard to get up?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:35:29.365748",
+  "name": "QUES-06",
+  "naming_series": "QUES-.##",
+  "question": "Are there guns in your home?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:36:16.295064",
+  "name": "QUES-07",
+  "naming_series": "QUES-.##",
+  "question": "Do you, your friends, or your family smoke in your home or place you live?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:36:53.624617",
+  "name": "QUES-08",
+  "naming_series": "QUES-.##",
+  "question": "Are there working smoke detectors in your home?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:37:40.080907",
+  "name": "QUES-09",
+  "naming_series": "QUES-.##",
+  "question": "Are you a primary caretaker for children, your parents or other adults?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:38:12.935240",
+  "name": "QUES-10",
+  "naming_series": "QUES-.##",
+  "question": "Do you have any pets or a support animal?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:38:46.633799",
+  "name": "QUES-11",
+  "naming_series": "QUES-.##",
+  "question": "When in a car, do you wear a seatbelt?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:39:27.602576",
+  "name": "QUES-12",
+  "naming_series": "QUES-.##",
+  "question": "When riding a motorcycle, do you wear a helmet?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:40:06.873136",
+  "name": "QUES-13",
+  "naming_series": "QUES-.##",
+  "question": "When riding a bicycle, do you wear a helmet?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:41:10.324979",
+  "name": "QUES-14",
+  "naming_series": "QUES-.##",
+  "question": "Have you had any transportation-related accidents recently?",
+  "question_type": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Environmental Question",
+  "modified": "2024-02-09 03:42:07.483469",
+  "name": "QUES-15",
+  "naming_series": "QUES-.##",
+  "question": "Are family members or friends worried about your driving?",
+  "question_type": null
+ }
+]
